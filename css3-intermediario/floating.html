@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>floating</title>
+  <style type="text/css">
+    
+    /*#first {
+      border: 5px solid red;
+      background: green;
+
+    }*/
+
+    .content {
+      background: blue;
+      border: 1px solid gray;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+    }
+    
+    /*.content {
+      background: red;
+      border: 1px solid gray;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      float: left;
+    }*/
+
+    /*.content0 {
+      background: red;
+      border: 1px solid gray;
+      width: 150px;
+      height: 150px;
+    }*/
+
+    .clear {
+      clear: left;
+      /*clear: right;
+      clear: both;
+      clear: none;*/
+      /*limpa os campos em volta, exemplo texto em volta da imagem
+      ele passaria para o fim dos elementos flutuantes*/
+    }
+
+  </style>
+</head>
+<body>
+  <!-- <div class="content0">
+    conteudo 0
+  </div> -->
+  <div id="first">
+    <div class="content">
+    conteudo 1
+    </div>
+    <div class="content">
+      conteudo 2
+    </div>
+    <div class="content">
+      conteudo 3
+    </div>
+    <div class="clear">
+    </div>
+  </div>
+  <!-- <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+  </p> -->
+</body>
+</html>
