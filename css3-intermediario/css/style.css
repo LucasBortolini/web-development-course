@@ -1,0 +1,27 @@
+/*box model*/
+
+/*.content {*/
+  /*border: 1px solid red;*/
+
+  /*padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;*/
+
+  /*padding: 20px 15px 10px 5px; igual relogio*/
+  /*padding: 20px; em todos os lados*/
+  /*padding: 20px 5px; vertical dps horizontal*/
+  /*padding: 20px;*/
+
+  /*margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;*/
+
+  /*margin: 20px 15px 5px 10px; igual relogio*/
+  /*margin: 20px; todos os lados*/
+  /*margin: 20px 5px; vertical dps horizontal*/
+  /*margin: 10px; margens se sobrepoem, o maior valor se mantem entre
+  os boxes MARGIN COLLAPSE*/
+  /*width: 150px;*/
+}
