@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>overlapping elements</title>
+  <style type="text/css">
+    
+    .content1 {
+      border: 1px solid red;
+      background: orange;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      z-index: 1;
+    }
+    .content2 {
+      border: 1px solid red;
+      background: blue;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 80px;
+      left: 80px;
+      z-index: 0;
+    }
+    .content3 {
+      border: 1px solid red;
+      background: yellow;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 160px;
+      left: 160px;
+      z-index: 0;
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    <div class="content1">
+      Conteudo 1
+    </div>
+    <div class="content2">
+      Conteudo 2
+    </div>
+    <div class="content3">
+      Conteudo 3
+    </div>
+  </div>
+</body>
+</html>
