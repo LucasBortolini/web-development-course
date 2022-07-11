@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>callback functions</title>
+  <script type="text/javascript">
+
+    function viewArticle(id, callbackSuccess, callbackError) {
+      // lógica: recuperar o id via requisição http
+
+      if (true) {
+        callbackSuccess('callback function in js', 'Callback functions are widely used...')
+      } else {
+        callbackError('error retrieving data')
+      }
+    }
+
+    var callbackSuccess = function(title, description) {
+      document.write('<h1>' + title + '</h1>')
+      document.write('<hr />')
+      document.write('<p>' + description + '</p>')
+    }
+
+    var callbackError = function(error) {
+      document.write('<p><b>Erro:</b>' + error + '</p>')
+    }
+
+    // viewArticle(1, function(){...}, function() {...})
+    viewArticle(1, callbackSuccess, callbackError)
+
+  </script>
+  </head>
+  <body>
+
+  </body>
+  </html>
