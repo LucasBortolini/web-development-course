@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>scope of variables</title>
+  <script type="text/javascript">
+
+    // 3 escopos: global, função e o bloco
+
+    var series = 'friends'
+
+    // escopo de blocos
+    if(true) {
+      var series2 = 'Game of Thrones'
+      document.write(series)
+    }
+
+    document.write(series2)
+
+    document.write('<br/>')
+
+    function x() {
+      var series3 = 'The Walking Dead'
+      document.write(series)
+      document.write(series2)
+    }
+
+    x()
+
+    document.write('<br/>')
+    document.write(series3)
+
+  </script>
+  </head>
+  <body>
+
+  </body>
+  </html>
