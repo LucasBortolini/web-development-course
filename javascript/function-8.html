@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>function 7</title>
+  <script type="text/javascript">
+
+  var data = new Date()
+
+  // adicionar ou remover dias da data
+  // document.write(data.toString())
+  // data.setDate(data.getDate() + 1)
+  // document.write('<hr />')
+  // document.write(data.toString())
+  // document.write('<br />')
+  // document.write('<br />')
+  // document.write('<br />')
+
+  // adicionar ou remover meses da data
+  // document.write(data.toString())
+  // data.setMonth(data.getMonth() - 1)
+  // document.write('<hr />')
+  // document.write(data.toString())
+  // document.write('<br />')
+  // document.write('<br />')
+  // document.write('<br />')
+
+  // adicionar ou remover meses da data
+  // document.write(data.toString())
+  // data.setFullYear(data.getFullYear() + 1)
+  // document.write('<hr />')
+  // document.write(data.toString())
+
+  // 15/01/2017
+  var date1 = new Date(2017, 0, 15)
+
+  // 23/02/2017
+  var date2 = new Date(2017, 1, 23)
+
+  document.write(date1.toString())
+  document.write('<hr />')
+  document.write(date2.toString())
+  document.write('<hr />')
+  document.write('<br />')
+  document.write('<br />')
+  document.write('<br />')
+
+  // converter datas para algo que possamos calcular
+  // get Time recupera os milissegundos de 1 janeiro de 1970 até o atual
+  document.write(date1.getTime())
+  document.write('<hr />')
+  document.write(date2.getTime())
+  document.write('<br />')
+  document.write('<br />')
+  document.write('<hr />')
+
+  var milliseconds_between_dates = Math.abs(date1.getTime() - date2.getTime())
+  document.write(milliseconds_between_dates)
+
+  // encontrar a quantidade de milissegundos entre data 1 e 2
+  // Math.abs inverte valor negativo para positivo
+  // sabemos que 1 dia tem 24 horas
+  // cada hora tem 60 minutos
+  // cada minuto tem 60 segundos
+  // cada segundo tem 1000 milissegundos
+  // quantos milissegundos existem em 1 dia
+
+  document.write('<br />')
+  document.write('<br />')
+  document.write('<hr />')
+  
+  var milliseconds_day = (1 * 24 * 60 * 60 * 1000)
+  document.write('one day have ' + milliseconds_day + ' milliseconds')
+
+  document.write('<br />')
+  document.write('<br />')
+  document.write('<hr />')
+  document.write('<br />')
+  document.write('<br />')
+
+  document.write('The diferente between date1 and date2 is ' + Math.ceil(milliseconds_between_dates / milliseconds_day) + ' days')
+
+  </script>
+  </head>
+  <body>
+
+  </body>
+  </html>
