@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>events 1 - introduction and mouse</title>
+  <script type="text/javascript">
+
+    // onclick (quando clica)
+    // ondblclick (quando clica 2x)
+    // onmouseup (quando o link está liberado para click)
+    // onmouseover (quando o cursor passa na região da página que tem o elemento)
+    // oumouseout (quando o cursor sai da região da página que tem o elemento)
+
+    function action() {
+      alert('mouse coming out of the element');
+    }
+
+    function action2() {
+      alert('clicked element')
+    }
+
+    </script>
+  </head>
+  <body>
+    <!-- onclick -->
+    <div onclick="action()" style="background: #ccc; height: 150px; width: 150px;"></div><!-- end onclick -->
+
+    <!-- ondblclick -->
+    <div ondblclick="action()" style="background: #ccc; height: 150px; width: 150px;"></div><!-- end ondblclick -->
+
+    <!-- onmouseup -->
+    <div onmouseup="action()" style="background: #ccc; height: 150px; width: 150px;"></div><!-- end onmouseup -->
+
+    <!-- onmouseover -->
+    <div onmouseover="action()" style="background: #ccc; height: 150px; width: 150px;"></div><!-- end onmouseover -->
+
+    <!-- onmouseout -->
+    <div onmouseout="action()" style="background: #ccc; height: 150px; width: 150px;"></div><!-- end onmouseout -->
+
+    <!-- onmouseover and onclick -->
+    <div onmouseout="action()" onclick="action2()" style="background: #ccc; height: 150px; width: 150px;"></div><!-- end onmouseover -->
+  </body>
+  </html>
