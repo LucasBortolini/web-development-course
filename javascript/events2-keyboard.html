@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>events 2 - keyboard</title>
+  <script type="text/javascript">
+
+    // onkeydown (acionado no momento que uma tecla é pressionada)
+    // onkeyup (acionado no momento que uma tecla é liberada)
+    // onkeypress (acionado enquanto a tecla é pressionada somente caracteres)
+
+    function action() {
+      alert('event');
+    }
+
+    </script>
+  </head>
+  <body>
+    <!-- onkeydown -->
+    <input onkeydown="action()" type="text"><!-- onkeydown -->
+
+    <!-- onkeyup -->
+    <input onkeyup="action()" type="text"><!-- onkeyup -->
+
+    <!-- onkeypress -->
+    <input onkeypress="action()" type="text"><!-- onkeypress -->
+  </body>
+  </html>
