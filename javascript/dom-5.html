@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DOM 5 - manipulating element class</title>
+  <style>
+    .style1 {
+      background-color: #FF0000;
+      color: #FFF;
+    }
+
+    .style2 {
+      width: 400px;
+      height: 50px;
+      background-color: #FF0000;
+      text-align: center;
+      font-size: 25px;
+      color: #FFF;
+      padding: 25px;
+    }
+
+  </style>
+  <script>
+  
+    function modifiesClass() {
+      document.getElementById('message').className = 'style2'
+    }
+
+  </script>
+</head>
+<body>
+  
+  <div id="message" class="style1">manipulating element class</div>
+  <hr>
+  <button type="button" onclick="modifiesClass()">apply class</button>
+</body>
+</html>
