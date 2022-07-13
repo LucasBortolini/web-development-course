@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>if else 4</title>
+  <script type="text/javascript">
+
+    var num1= prompt('enter a number');
+    var operation = prompt('sum or subtraction?');
+    var num2= prompt('enter another number');
+
+    function calculate(num1, num2, operation) {
+      
+      num1 = parseFloat(num1);
+      num2 = parseFloat(num2);
+
+      var result = 0;
+
+      if (operation == 'sum') {
+        result = num1 + num2;
+      }
+      if (operation == 'subtraction') {
+        result = num1 - num2;
+      }
+
+      return result;
+    }
+
+    document.write('the result is ' + calculate(num1, num2, operation));
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+  </html>
